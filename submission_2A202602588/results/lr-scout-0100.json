@@ -1,0 +1,72 @@
+{
+  "cfg": {
+    "exp_id": "lr-scout-0100",
+    "group": "lr_scout",
+    "description": "3-epoch validation learning-rate screen at lr=0.1",
+    "loss": "ce",
+    "optimizer": "sgd_momentum",
+    "lr": 0.1,
+    "weight_decay": 0.0,
+    "momentum": 0.9,
+    "batch": 512,
+    "epochs": 3,
+    "hidden": [
+      256,
+      128
+    ],
+    "dropout": 0.0,
+    "init": "he",
+    "clip_norm": null,
+    "precision": "fp32",
+    "seed": 1
+  },
+  "history": {
+    "epoch": [
+      1,
+      2,
+      3
+    ],
+    "train_loss": [
+      0.47248215600939364,
+      0.4020031525325352,
+      0.3758550689772524
+    ],
+    "val_loss": [
+      0.47631976047462604,
+      0.4086854827632023,
+      0.38414535543799144
+    ],
+    "val_acc": [
+      0.7923129881026656,
+      0.8238957853746692,
+      0.8417095157160991
+    ],
+    "val_macro_f1": [
+      0.6233406143763423,
+      0.7076783372241177,
+      0.7013838029977932
+    ],
+    "grad_norm": [
+      0.530472516808582,
+      0.5660262048818386,
+      0.5876588731635224
+    ],
+    "epoch_time_s": [
+      2.6138964999991003,
+      1.9916429000004428,
+      2.176615699998365
+    ]
+  },
+  "summary": {
+    "step0_loss": 2.269061788393712,
+    "best_val_loss": 0.38414535543799144,
+    "best_epoch": 3,
+    "final_train_loss": 0.3758550689772524,
+    "final_val_loss": 0.38414535543799144,
+    "val_acc": 0.8417095157160991,
+    "val_macro_f1": 0.7013838029977932,
+    "time_per_epoch_s": 2.2607183666659694,
+    "peak_mem_MB": 0.0,
+    "diverged": false
+  }
+}
